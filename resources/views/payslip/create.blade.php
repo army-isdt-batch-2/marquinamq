@@ -7,7 +7,7 @@
         <div class="col-12 mt-5">
             <div class="card">
                 <div class="card-body row">
-                    <h3>List Payroll</h3>
+                    <h3>Payroll</h3>
                     <hr>
                     <div class="col-10"></div>
                     {{-- <div class="col-2 text-end"> 
