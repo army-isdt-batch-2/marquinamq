@@ -10,17 +10,9 @@
                     <h3>Create Department</h3>
                     <hr>
                     <div class="col-10"></div>
-                    {{-- <div class="col-2 text-end"> 
-                  <button class="btn btn-primary pull-right">Create</button>
-              </div> --}}
                     <div class="col-12">
                         <br>
                     </div>
-
-                    {{-- <div class="col-8"></div>
-              <div class="col-4 text-end"> 
-                  <input type="text" class="form-control" placeholder="Search">
-              </div> --}}
                     <div class="col-12">
                         <form action="/departments/save" method="post" class="row g-3">
                             @csrf
@@ -28,7 +20,6 @@
                                 <label for="inputEmail4" class="form-label">Department</label>
                                 <input type="text" class="form-control" id="inputEmail4" name="departments" required>
                             </div>
-
                             <div class="col-12">
                                 <button type="submit" class="btn btn-primary">Save</button>
                             </div>
