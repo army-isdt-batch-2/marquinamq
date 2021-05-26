@@ -22,11 +22,18 @@ Route::get('/layout', [
 Route::get('/departments', [
     App\Http\Controllers\DepartmentsController::class,
     'departments'
-]);
+])->name('departments');
+
 Route::get('/departments/create', [
-    App\Http\Controllers\DepartmentsController::class,
+       App\Http\Controllers\DepartmentsController::class,
     'add'
-]);
+])->name('departments.add');
+
+
+Route::post('/departments/save', [
+    App\Http\Controllers\DepartmentsController::class,
+    'save'
+])->name('departments.save');
 
 ///// EMPLOYEES ////
 Route::get('/employees', [
@@ -95,4 +102,3 @@ Route::get('/payslips/view', [
     App\Http\Controllers\PayslipsController::class,
     'show'
 ]);
-
