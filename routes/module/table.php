@@ -6,7 +6,7 @@ foreach (glob(__DIR__ . '/modules/*.php') as $filename) {
     include $filename;
 }
 
-Route::get('/login', [
+Route::get('/table', [
     App\Http\Controllers\LoginController::class,
-    'index'
+    'table'
 ]);
