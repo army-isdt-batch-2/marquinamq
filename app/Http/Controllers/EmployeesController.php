@@ -16,7 +16,9 @@ class EmployeesController extends Controller
     }
     public function employees() 
     {
-    return view('employee');
+    return view('employee')->with([
+        'data' => Employee::all()
+    ]);    
     }
 
     public function add() 
