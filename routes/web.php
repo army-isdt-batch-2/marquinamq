@@ -17,6 +17,8 @@ Route::get('/layout', [
     App\Http\Controllers\LoginController::class,
     'layout'
 ]);
+
+
 ///// PAYROLL /////
 
 Route::get('/departments', [
@@ -36,14 +38,21 @@ Route::post('/departments/save', [
 ])->name('departments.save');
 
 ///// EMPLOYEES ////
+
 Route::get('/employees', [
     App\Http\Controllers\EmployeesController::class,
     'employees'
-]);
+])->name('employees');
+
 Route::get('/employees/create', [
     App\Http\Controllers\EmployeesController::class,
     'add'
-]);
+])->name('employees.create');
+
+Route::post('/employees/save', [
+    App\Http\Controllers\DepartmentsController::class,
+    'save'
+])->name('employees.save');
 
 //// LOANS ////
 Route::get('/loans', [

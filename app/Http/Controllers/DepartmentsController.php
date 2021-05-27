@@ -17,7 +17,9 @@ class DepartmentsController extends Controller
 
     public function departments() 
     {
-    return view('department');
+        return view('department')->with([
+            'data' => Department::all()
+        ]);
     }
     
     public function add() 
@@ -32,5 +34,4 @@ class DepartmentsController extends Controller
 
         return Redirect::route('departments');
     }
-
 }
