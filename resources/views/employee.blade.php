@@ -3,7 +3,7 @@
 @section('title', 'Employees')
 @section('title', $active)
 @section('content')
-    <div style="margin-top: -1%;" class="row d">
+    <div style="margin-top: -1%;" class="row d ">
         <div class="col-12 mt-5">
             <div class="card">
                 <div class="card-body row">
